@@ -136,53 +136,6 @@ Animator:
     type: 3}
   m_PrefabInstance: {fileID: 1524322299}
   m_PrefabAsset: {fileID: 0}
---- !u!136 &70993422
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 70993419}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.26282212
-  m_Height: 0.6984275
-  m_Direction: 1
-  m_Center: {x: 0.004364848, y: 1.6327003, z: 0.0048410418}
---- !u!114 &70993423
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 70993419}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e43b8b37cd32d1a48bc2c473cbe63494, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHealth: 100
-  minWaitTime: 5
-  maxWaitTime: 10
-  baseAttackChance: 0.5
-  lowHealthBias: 0.5
-  audioSource: {fileID: 70993424}
-  onDamageClip: {fileID: 8300000, guid: 74e2171422fa82d4db16c79a968440ed, type: 3}
-  onDieClip: {fileID: 8300000, guid: 7283d7d2d7d5d854f83bbad1eddb4757, type: 3}
-  attackClip: {fileID: 8300000, guid: 539e0fd02b48daf4bb7431e299fe46c1, type: 3}
-  animator: {fileID: 70993420}
-  player: {fileID: 964190329}
-  panel_UI: {fileID: 1506420672}
 --- !u!82 &70993424
 AudioSource:
   m_ObjectHideFlags: 0
@@ -279,6 +232,59 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &110517669 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -1552236528443304843, guid: ea589eea5ec6e484c9ef785ba70c04bc,
+    type: 3}
+  m_PrefabInstance: {fileID: 1524322299}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &110517671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 110517669}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43b8b37cd32d1a48bc2c473cbe63494, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  minWaitTime: 5
+  maxWaitTime: 10
+  baseAttackChance: 0.5
+  lowHealthBias: 0.5
+  audioSource: {fileID: 70993424}
+  onDamageClip: {fileID: 8300000, guid: 74e2171422fa82d4db16c79a968440ed, type: 3}
+  onDieClip: {fileID: 8300000, guid: 7283d7d2d7d5d854f83bbad1eddb4757, type: 3}
+  attackClip: {fileID: 8300000, guid: 539e0fd02b48daf4bb7431e299fe46c1, type: 3}
+  animator: {fileID: 70993420}
+  player: {fileID: 964190329}
+  panel_UI: {fileID: 1506420672}
+--- !u!136 &110517672
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 110517669}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.15090632
+  m_Height: 0.5703795
+  m_Direction: 1
+  m_Center: {x: 9.932591e-15, y: 0.09838959, z: 0.051598076}
 --- !u!1 &283102395
 GameObject:
   m_ObjectHideFlags: 0
@@ -1895,15 +1901,7 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ea589eea5ec6e484c9ef785ba70c04bc,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 70993423}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ea589eea5ec6e484c9ef785ba70c04bc,
-        type: 3}
-      insertIndex: -1
       addedObject: {fileID: 70993424}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ea589eea5ec6e484c9ef785ba70c04bc,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 70993422}
     - targetCorrespondingSourceObject: {fileID: -4728426434207774260, guid: ea589eea5ec6e484c9ef785ba70c04bc,
         type: 3}
       insertIndex: -1
@@ -1912,6 +1910,14 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 831339183}
+    - targetCorrespondingSourceObject: {fileID: -1552236528443304843, guid: ea589eea5ec6e484c9ef785ba70c04bc,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 110517672}
+    - targetCorrespondingSourceObject: {fileID: -1552236528443304843, guid: ea589eea5ec6e484c9ef785ba70c04bc,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 110517671}
     - targetCorrespondingSourceObject: {fileID: 2715566404302941441, guid: ea589eea5ec6e484c9ef785ba70c04bc,
         type: 3}
       insertIndex: -1
